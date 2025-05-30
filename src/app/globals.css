@@ -1,57 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  :root {
-    --primary: 210 100% 20%; /* #003366 Navy Blue */
-    --secondary: 122 39% 49%; /* #4CAF50 Green */
-    --accent: 40 100% 50%; /* #FFB300 Amber */
-    --background: 0 0% 96%; /* #F5F5F5 */
-    --foreground: 0 0% 20%; /* #333333 */
-    --card: 0 0% 100%; /* #FFFFFF */
-    --card-foreground: 0 0% 20%; /* #333333 */
-    --popover: 0 0% 100%; /* #FFFFFF */
-    --popover-foreground: 0 0% 20%; /* #333333 */
-    --muted: 0 0% 88%; /* #E0E0E0 */
-    --muted-foreground: 0 0% 40%; /* #666666 */
-    --border: 0 0% 88%; /* #E0E0E0 */
-    --input: 0 0% 88%; /* #E0E0E0 */
-    --ring: 210 100% 20%; /* #003366 */
-  }
-}
+@import "tailwindcss";
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: #E0E0E0;
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: #F5F5F5;
+    color: #333333;
     font-family: 'Open Sans', system-ui, sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', system-ui, sans-serif;
-    @apply font-bold;
+    font-weight: bold;
   }
 }
 
 @layer components {
   .container {
-    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
   
   .btn-primary {
-    @apply bg-[#003366] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#00284d] transition-colors duration-200;
+    background-color: #003366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #00284d;
   }
   
   .btn-secondary {
-    @apply bg-[#4CAF50] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#3d8b40] transition-colors duration-200;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #3d8b40;
   }
   
   .btn-accent {
-    @apply bg-[#FFB300] text-black px-6 py-3 rounded-lg font-semibold hover:bg-[#e6a200] transition-colors duration-200;
+    background-color: #FFB300;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-accent:hover {
+    background-color: #e6a200;
   }
 }
 
