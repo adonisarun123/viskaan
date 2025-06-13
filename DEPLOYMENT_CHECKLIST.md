@@ -28,13 +28,28 @@
 - [x] `tsconfig.json` - TypeScript configuration
 - [x] `package.json` - Dependencies and scripts
 
-### ✅ Environment Variables Required
-Set these in Vercel dashboard:
+### ✅ Environment Variables Required ⚠️ **CRITICAL**
+Set these in Vercel Dashboard → Settings → Environment Variables:
+
+**Step-by-Step Instructions:**
+1. Go to [vercel.com](https://vercel.com) → Your Project → Settings → Environment Variables
+2. Add each variable with these exact settings:
+
 ```
-NEXT_PUBLIC_WHATSAPP_NUMBER=918023197874
-NEXT_PUBLIC_CONTACT_EMAIL=mani@visskanaviation.com
-NEXT_PUBLIC_SITE_URL=https://viskaneliteservices.com
+Key: NEXT_PUBLIC_SITE_URL
+Value: https://viskaneliteservices.com
+Environment: Production, Preview, Development (select all)
+
+Key: NEXT_PUBLIC_WHATSAPP_NUMBER
+Value: 918023197874
+Environment: Production, Preview, Development (select all)
+
+Key: NEXT_PUBLIC_CONTACT_EMAIL
+Value: mani@visskanaviation.com
+Environment: Production, Preview, Development (select all)
 ```
+
+**Verification:** After deployment, visit `https://your-domain.com/api/env-check` to verify all environment variables are set correctly.
 
 ## Deployment Status
 
@@ -83,11 +98,12 @@ npm run start
 
 After deployment, verify:
 - [ ] All pages load correctly
+- [ ] **Environment variables set correctly** (`/api/env-check`)
 - [ ] Contact forms work
 - [ ] WhatsApp integration works
 - [ ] SEO meta tags are correct
-- [ ] Sitemap.xml is accessible
-- [ ] Robots.txt is accessible
+- [ ] Sitemap.xml is accessible (`/sitemap.xml`)
+- [ ] Robots.txt is accessible (`/robots.txt`)
 - [ ] Performance scores are good
 - [ ] Mobile responsiveness
 
