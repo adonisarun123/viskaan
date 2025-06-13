@@ -1,76 +1,109 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Building, CheckCircle, Users, Wrench, ShieldCheck, ClipboardList, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { Leaf, ArrowRight, CheckCircle, TreePine, Flower, Sprout, Droplets, Sun } from "lucide-react";
 
-export default function FacilityManagementPage() {
+export default function HorticulturePage() {
   const services = [
     {
-      icon: <ClipboardList size={24} />,
-      title: "Integrated Facility Management",
-      description: "Complete management of all facility services under one umbrella for seamless operations.",
+      icon: <TreePine size={32} />,
+      title: "Landscape Design",
+      description: "Professional landscape design and planning for commercial and residential spaces.",
     },
     {
-      icon: <Wrench size={24} />,
-      title: "Technical Services",
-      description: "Electrical, plumbing, HVAC maintenance, and specialized equipment management.",
+      icon: <Leaf size={32} />,
+      title: "Garden Maintenance",
+      description: "Regular maintenance services including pruning, weeding, and plant care.",
     },
     {
-      icon: <Users size={24} />,
-      title: "Soft Services",
-      description: "Housekeeping, landscaping, pest control, and waste management services.",
+      icon: <Flower size={32} />,
+      title: "Vertical Gardening",
+      description: "Modern vertical garden solutions for space-efficient green installations.",
     },
     {
-      icon: <ShieldCheck size={24} />,
-      title: "Compliance Management",
-      description: "Ensuring adherence to all statutory requirements and safety standards.",
+      icon: <Sprout size={32} />,
+      title: "Plant Supply",
+      description: "Quality plants, saplings, and gardening materials from trusted nurseries.",
     },
   ];
 
   const keyFeatures = [
-    "24/7 Emergency Response Team",
-    "ISO 9001:2015 Certified Processes",
-    "Technology-Enabled Service Delivery",
-    "Customized Service Level Agreements",
-    "Regular Performance Audits",
-    "Sustainability Initiatives",
-    "Cost Optimization Strategies",
-    "Vendor Management Services",
+    "Expert landscape architects and horticulturists",
+    "Sustainable and eco-friendly practices",
+    "Seasonal plant selection and care",
+    "Automated irrigation system installation",
+    "Organic fertilizers and pest control",
+    "Regular maintenance schedules",
+    "Plant health monitoring",
+    "Soil testing and improvement",
+    "Seasonal flower arrangements",
+    "Green certification support"
   ];
 
-  const industries = [
-    "Corporate Offices",
-    "Manufacturing Plants",
+  const gardenTypes = [
+    "Corporate Campuses",
     "Educational Institutions",
     "Healthcare Facilities",
-    "Government Buildings",
-    "IT Parks & Tech Centers",
-    "Retail & Commercial Spaces",
     "Residential Complexes",
+    "Hotels & Resorts",
+    "Industrial Parks",
+    "Government Buildings",
+    "Shopping Centers",
+    "Rooftop Gardens",
+    "Terrace Gardens",
+    "Indoor Plants",
+    "Medicinal Gardens"
+  ];
+
+  const specialties = [
+    {
+      title: "Landscape Architecture",
+      description: "Complete landscape design from concept to implementation",
+      icon: <TreePine size={24} />,
+      color: "bg-green-600"
+    },
+    {
+      title: "Irrigation Systems",
+      description: "Modern drip and sprinkler irrigation solutions",
+      icon: <Droplets size={24} />,
+      color: "bg-blue-600"
+    },
+    {
+      title: "Plant Care",
+      description: "Expert plant selection, care, and maintenance services",
+      icon: <Leaf size={24} />,
+      color: "bg-emerald-600"
+    },
+    {
+      title: "Seasonal Services",
+      description: "Year-round garden care adapted to seasonal requirements",
+      icon: <Sun size={24} />,
+      color: "bg-yellow-600"
+    }
   ];
 
   const process = [
     {
-      step: 1,
+      step: "1",
       title: "Site Assessment",
-      description: "Comprehensive evaluation of facility requirements and current state",
+      description: "Detailed analysis of soil, climate, and space requirements"
     },
     {
-      step: 2,
-      title: "Custom Solution Design",
-      description: "Tailored service plans based on specific needs and budget",
+      step: "2",
+      title: "Design Planning",
+      description: "Custom landscape design based on your preferences and budget"
     },
     {
-      step: 3,
+      step: "3",
       title: "Implementation",
-      description: "Smooth transition and deployment of services with minimal disruption",
+      description: "Professional installation with quality plants and materials"
     },
     {
-      step: 4,
-      title: "Continuous Monitoring",
-      description: "Regular audits and performance tracking for service excellence",
-    },
+      step: "4",
+      title: "Maintenance",
+      description: "Ongoing care and maintenance to ensure healthy growth"
+    }
   ];
 
   return (
@@ -92,11 +125,11 @@ export default function FacilityManagementPage() {
               Back to Services
             </Link>
             <h1 className="text-4xl md:text-5xl font-bold text-[#003366] mb-4">
-              Facility Management Services
+              Horticulture Services
             </h1>
             <p className="text-xl text-gray-600">
-              Comprehensive facility solutions that ensure operational excellence, 
-              compliance, and optimal resource utilization for your organization.
+              Professional landscaping, garden maintenance, and horticulture solutions 
+              creating beautiful, sustainable green spaces for your environment.
             </p>
           </motion.div>
         </div>
@@ -113,28 +146,27 @@ export default function FacilityManagementPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Complete Facility Solutions Under One Roof
+                Creating Green Spaces That Inspire
               </h2>
               <p className="text-gray-600 mb-6">
-                With over 25 years of experience, Visskan Associates delivers integrated 
-                facility management services that combine technical expertise, operational 
-                efficiency, and cost-effectiveness. Our comprehensive approach ensures your 
-                facilities operate at peak performance while maintaining the highest standards 
-                of safety and compliance.
+                Viskan Elite Services brings nature closer to your workspace and living areas 
+                through expert horticulture services. Our team of qualified landscape architects 
+                and horticulturists create sustainable, beautiful green spaces that enhance 
+                your environment while promoting well-being.
               </p>
               <p className="text-gray-600 mb-6">
-                From day-to-day maintenance to strategic facility planning, we handle every 
-                aspect of facility management, allowing you to focus on your core business 
-                operations.
+                From corporate campuses to residential complexes, we provide comprehensive 
+                landscaping solutions including design, installation, and ongoing maintenance 
+                to ensure your green spaces thrive year-round.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center">
                   <CheckCircle className="text-[#4CAF50] mr-2" />
-                  <span className="font-semibold">ISO Certified</span>
+                  <span className="font-semibold">500+ Gardens Maintained</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="text-[#4CAF50] mr-2" />
-                  <span className="font-semibold">500+ Facilities Managed</span>
+                  <span className="font-semibold">Eco-Friendly Practices</span>
                 </div>
               </div>
             </motion.div>
@@ -146,7 +178,7 @@ export default function FacilityManagementPage() {
               className="relative h-[400px] bg-gray-200 rounded-xl overflow-hidden"
             >
               <div className="absolute inset-0 flex items-center justify-center">
-                <Building size={100} className="text-gray-400" />
+                <Leaf size={100} className="text-gray-400" />
               </div>
             </motion.div>
           </div>
@@ -164,10 +196,10 @@ export default function FacilityManagementPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Our Service Categories
+              Our Horticulture Services
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Comprehensive facility management services tailored to your specific needs
+              Comprehensive landscaping and garden maintenance solutions for all types of spaces
             </p>
           </motion.div>
 
@@ -181,7 +213,7 @@ export default function FacilityManagementPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="w-12 h-12 bg-[#003366] text-white rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-green-600 text-white rounded-lg flex items-center justify-center mb-4">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">{service.title}</h3>
@@ -192,8 +224,49 @@ export default function FacilityManagementPage() {
         </div>
       </section>
 
-      {/* Key Features */}
+      {/* Specialties Section */}
       <section className="py-16 bg-white">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Our Specialties
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Specialized services that set us apart in the horticulture industry
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {specialties.map((specialty, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className={`${specialty.color} text-white p-6 flex items-center`}>
+                  <div className="mr-4">{specialty.icon}</div>
+                  <h3 className="text-2xl font-bold">{specialty.title}</h3>
+                </div>
+                <div className="p-6">
+                  <p className="text-gray-600">{specialty.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Key Features & Garden Types */}
+      <section className="py-16 bg-gray-50">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12">
             <motion.div
@@ -203,7 +276,7 @@ export default function FacilityManagementPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Key Features of Our Service
+                Why Choose Our Horticulture Services
               </h2>
               <div className="space-y-3">
                 {keyFeatures.map((feature, index) => (
@@ -229,19 +302,19 @@ export default function FacilityManagementPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Industries We Serve
+                Types of Gardens We Create
               </h2>
               <div className="grid grid-cols-2 gap-4">
-                {industries.map((industry, index) => (
+                {gardenTypes.map((type, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
                     viewport={{ once: true }}
-                    className="bg-gray-50 rounded-lg p-4 text-center hover:bg-[#003366] hover:text-white transition-colors duration-300"
+                    className="bg-white rounded-lg p-4 text-center hover:bg-green-600 hover:text-white transition-colors duration-300"
                   >
-                    <p className="font-medium">{industry}</p>
+                    <p className="font-medium">{type}</p>
                   </motion.div>
                 ))}
               </div>
@@ -251,7 +324,7 @@ export default function FacilityManagementPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -264,7 +337,7 @@ export default function FacilityManagementPage() {
               Our Service Process
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              A systematic approach to delivering excellence in facility management
+              A systematic approach to creating and maintaining beautiful green spaces
             </p>
           </motion.div>
 
@@ -278,10 +351,10 @@ export default function FacilityManagementPage() {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="w-16 h-16 bg-[#003366] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
               </motion.div>
             ))}
@@ -289,7 +362,7 @@ export default function FacilityManagementPage() {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* CTA Section */}
       <section className="py-16 bg-white">
         <div className="container">
           <motion.div
@@ -297,88 +370,22 @@ export default function FacilityManagementPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center"
           >
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Benefits of Choosing Visskan
+              Ready to Create Your Green Space?
             </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="bg-blue-50 rounded-xl p-6"
-            >
-              <h3 className="text-xl font-semibold text-blue-800 mb-3">Cost Optimization</h3>
-              <p className="text-blue-700">
-                Reduce operational costs by up to 20% through efficient resource management 
-                and preventive maintenance strategies.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="bg-green-50 rounded-xl p-6"
-            >
-              <h3 className="text-xl font-semibold text-green-800 mb-3">Enhanced Productivity</h3>
-              <p className="text-green-700">
-                Create optimal working environments that boost employee productivity and 
-                satisfaction through well-maintained facilities.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-purple-50 rounded-xl p-6"
-            >
-              <h3 className="text-xl font-semibold text-purple-800 mb-3">Risk Mitigation</h3>
-              <p className="text-purple-700">
-                Ensure compliance with all regulations and minimize operational risks 
-                through proactive management and regular audits.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-[#003366] text-white">
-        <div className="container text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl font-bold mb-4">
-              Ready to Optimize Your Facility Operations?
-            </h2>
-            <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-              Let our experts design a customized facility management solution for your organization
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+              Contact us today to discuss your landscaping needs and transform your space 
+              into a beautiful, sustainable green environment.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-[#FFB300] text-black px-8 py-4 rounded-lg font-semibold hover:bg-[#e6a200] transition-colors duration-200"
-              >
-                Get a Free Consultation
-              </Link>
-              <Link
-                href="/services"
-                className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#003366] transition-all duration-200"
-              >
-                View All Services
-              </Link>
-            </div>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-200"
+            >
+              Get Quote
+              <ArrowRight size={20} />
+            </Link>
           </motion.div>
         </div>
       </section>

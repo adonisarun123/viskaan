@@ -35,8 +35,8 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-4">
-              <h3 className="text-2xl font-bold">VISSKAN</h3>
-              <p className="text-[#4CAF50] text-sm">Associates</p>
+              <h3 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FFB300] to-[#FFC940]">VISKAN</h3>
+              <p className="text-white text-sm uppercase tracking-wide">Elite Services</p>
             </div>
             <p className="text-gray-300 mb-4">
               End-to-End Facility Management Services Since 1995. Trusted by Government, 
@@ -131,7 +131,7 @@ const Footer = () => {
         <div className="border-t border-gray-600 pt-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-300">
-              © {new Date().getFullYear()} Visskan Associates. All rights reserved.
+              © {new Date().getFullYear()} Viskan Elite Services. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <Link href="/privacy" className="text-gray-300 hover:text-white transition-colors">

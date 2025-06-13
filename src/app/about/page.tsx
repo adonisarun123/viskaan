@@ -25,16 +25,16 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-[#003366] to-[#00284d]">
+      <section className="relative py-20 bg-gray-100">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-center text-white"
+            className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">About Visskan Associates</h1>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#003366]">About Viskan Elite Services</h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Your trusted partner in facility management since 1995
             </p>
           </motion.div>
@@ -55,7 +55,7 @@ export default function AboutPage() {
                 Leading the Way in Facility Management
               </h2>
               <p className="text-gray-600 mb-4">
-                Visskan Associates, established in 1995, is a trusted name in facility management 
+                Viskan Elite Services, established in 1995, is a trusted name in facility management 
                 with a workforce of over 3600 professionals. We cater to government institutions, 
                 MNCs, aerospace agencies, and more, delivering tailored solutions with high 
                 professionalism and efficiency.

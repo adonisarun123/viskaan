@@ -66,9 +66,30 @@ const Header = () => {
         <nav className="container">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-[#003366]">VISSKAN</span>
-              <span className="text-sm text-[#4CAF50] ml-2">Associates</span>
+            <Link href="/" className="flex items-center group">
+              <div className="relative">
+                {/* Main Logo Container */}
+                <div className="flex flex-col items-start">
+                  {/* Brand Name */}
+                  <div className="relative">
+                    <span className="text-2xl md:text-3xl font-black text-[#003366] tracking-wide leading-none transition-all duration-300 group-hover:text-[#00284d]">
+                      VISKAN
+                    </span>
+                    {/* Elegant underline accent */}
+                    <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-[#FFB300] to-[#4CAF50] transform scale-x-100 transition-transform duration-300"></div>
+                  </div>
+                  
+                  {/* Tagline */}
+                  <div className="relative mt-1">
+                    <span className="text-xs md:text-sm font-semibold text-[#4CAF50] tracking-widest uppercase leading-none transition-all duration-300 group-hover:text-[#3d8b40]">
+                      Elite Services
+                    </span>
+                  </div>
+                </div>
+                
+                {/* Subtle side accent */}
+                <div className="absolute -right-2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#FFB300] via-[#4CAF50] to-transparent opacity-60"></div>
+              </div>
             </Link>
 
             {/* Desktop Navigation */}

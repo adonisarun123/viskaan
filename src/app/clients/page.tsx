@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Quote, Star, Building, Users, Trophy, TrendingUp } from "lucide-react";
-import Image from "next/image";
 
 export default function ClientsPage() {
   const majorClients = [
@@ -98,16 +97,16 @@ export default function ClientsPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-[#003366] to-[#00284d]">
+      <section className="relative py-20 bg-gray-100">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-center text-white"
+            className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Esteemed Clients</h1>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#003366]">Our Esteemed Clients</h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Trusted by India's leading organizations for over 25 years
             </p>
           </motion.div>

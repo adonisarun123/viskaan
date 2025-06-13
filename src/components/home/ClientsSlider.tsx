@@ -5,14 +5,36 @@ import Image from "next/image";
 
 const ClientsSlider = () => {
   const clients = [
-    { name: "ISRO", logo: "/clients/isro.png" },
-    { name: "BEL", logo: "/clients/bel.png" },
-    { name: "HAL", logo: "/clients/hal.png" },
-    { name: "IIMB", logo: "/clients/iimb.png" },
-    { name: "Toshiba", logo: "/clients/toshiba.png" },
-    { name: "Bosch", logo: "/clients/bosch.png" },
-    { name: "CEAT", logo: "/clients/ceat.png" },
-    { name: "Metro Rail", logo: "/clients/metro.png" },
+    { 
+      name: "ISRO", 
+      fullName: "Indian Space Research Organisation",
+      logo: "/images/isro.jpeg" 
+    },
+    { 
+      name: "BEL", 
+      fullName: "Bharat Electronics Limited",
+      logo: "/images/bel.png" 
+    },
+    { 
+      name: "HAL", 
+      fullName: "Hindustan Aeronautics Limited",
+      logo: "/images/hal.jpeg" 
+    },
+    { 
+      name: "IIM-B", 
+      fullName: "Indian Institute of Management Bangalore",
+      logo: "/images/iimb.png" 
+    },
+    { 
+      name: "Toshiba", 
+      fullName: "Toshiba Corporation",
+      logo: "/images/toshiba.png" 
+    },
+    { 
+      name: "Bosch", 
+      fullName: "Robert Bosch GmbH",
+      logo: "/images/bosch.jpeg" 
+    },
   ];
 
   const testimonials = [
@@ -38,9 +60,9 @@ const ClientsSlider = () => {
       <div className="container">
         {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
           viewport={{ once: true }}
           className="text-center mb-12"
         >
@@ -54,31 +76,34 @@ const ClientsSlider = () => {
 
         {/* Client Logos */}
         <div className="mb-16 overflow-hidden">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="flex justify-center items-center flex-wrap gap-8 md:gap-12"
-          >
+          <div className="flex justify-center items-center flex-wrap gap-8 md:gap-12">
             {clients.map((client, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.1 }}
-                className="w-32 h-20 relative grayscale hover:grayscale-0 transition-all duration-300"
+                className="w-48 h-24 relative group hover:scale-105 transition-transform duration-300"
               >
-                <div className="w-full h-full bg-gray-100 rounded-lg flex items-center justify-center px-4">
-                  <span className="text-gray-700 font-semibold text-center">
-                    {client.name}
-                  </span>
+                <div className="w-full h-full bg-white rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+                  <Image
+                    src={client.logo}
+                    alt={`${client.fullName} logo`}
+                    width={200}
+                    height={80}
+                    className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    priority={index < 3}
+                    sizes="(max-width: 768px) 180px, 200px"
+                  />
+                </div>
+                {/* Tooltip */}
+                <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-10">
+                  {client.fullName}
                 </div>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
         </div>
 
         {/* Testimonials */}
@@ -86,11 +111,11 @@ const ClientsSlider = () => {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-50 p-6 rounded-xl"
+              className="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
             >
               <div className="mb-4">
                 <svg
@@ -101,7 +126,7 @@ const ClientsSlider = () => {
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
               </div>
-              <p className="text-gray-700 mb-4 italic">"{testimonial.quote}"</p>
+              <p className="text-gray-700 mb-4 italic">&ldquo;{testimonial.quote}&rdquo;</p>
               <div>
                 <p className="font-semibold text-gray-800">{testimonial.author}</p>
                 <p className="text-sm text-gray-600">{testimonial.company}</p>

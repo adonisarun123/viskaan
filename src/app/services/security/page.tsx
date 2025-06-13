@@ -68,7 +68,7 @@ export default function SecurityServicesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-[#003366] to-[#00284d]">
+      <section className="relative py-20 bg-gray-100">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -78,15 +78,15 @@ export default function SecurityServicesPage() {
           >
             <Link
               href="/services"
-              className="inline-flex items-center text-gray-300 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center text-gray-600 hover:text-[#003366] mb-6 transition-colors"
             >
               <ArrowRight size={16} className="mr-2 rotate-180" />
               Back to Services
             </Link>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#003366] mb-4">
               Security Services
             </h1>
-            <p className="text-xl text-gray-200">
+            <p className="text-xl text-gray-600">
               PSARA licensed security services providing comprehensive protection for 
               your people, property, and assets with trained professionals.
             </p>
