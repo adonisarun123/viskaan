@@ -7,7 +7,7 @@ const StatsBar = () => {
   const stats = [
     {
       icon: TrendingUp,
-      number: "28+",
+      number: "30+",
       label: "Years of Excellence",
       description: "Since 1995"
     },

@@ -102,7 +102,7 @@ export default function CareersPage() {
     {
       icon: <Briefcase size={32} />,
       title: "Job Security",
-      description: "Stable employment with a 25+ year established company and statutory benefits",
+      description: "Stable employment with a 30+ year established company and statutory benefits",
     },
   ];
 

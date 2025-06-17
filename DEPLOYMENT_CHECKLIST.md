@@ -45,7 +45,7 @@ Value: 918023197874
 Environment: Production, Preview, Development (select all)
 
 Key: NEXT_PUBLIC_CONTACT_EMAIL
-Value: mani@visskanaviation.com
+Value: info@viskaneliteservices.com
 Environment: Production, Preview, Development (select all)
 ```
 

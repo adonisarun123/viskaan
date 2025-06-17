@@ -12,51 +12,51 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://visskan.com'),
+  metadataBase: new URL('https://viskaneliteservices.com'),
   title: {
-    default: "Visskan Associates | Facility Management Services Since 1995",
-    template: "%s | Visskan Associates"
+    default: 'Visskan Elite Services - Professional Facility Management Company India',
+    template: '%s | Visskan Elite Services'
   },
-  description: "End-to-End Facility Management Services trusted by Government, Corporates & Institutions across India. Security, Housekeeping, Manpower Supply, and more since 1995.",
+  description: 'Visskan Elite Services: India\'s premier facility management company since 1995. ISO 9001:2015 certified with 3600+ professionals providing security, housekeeping, manpower supply, and comprehensive facility solutions.',
   keywords: [
-    "facility management services", 
-    "security services bangalore", 
-    "housekeeping services", 
-    "manpower supply india",
-    "PSARA certified security",
-    "ISO 9001 facility management",
-    "corporate facility services",
-    "government facility management",
-    "bangalore facility management",
-    "karnataka security services"
+    'facility management company india',
+    'Visskan Elite Services',
+    'professional facility management',
+    'ISO 9001 certified',
+    'PSARA licensed security',
+    'housekeeping services',
+    'manpower supply',
+    'corporate facility services'
   ],
-  authors: [{ name: "Visskan Associates" }],
-  creator: "Visskan Associates",
-  publisher: "Visskan Associates",
-  category: "Business Services",
-  classification: "Facility Management and Security Services",
+  authors: [{ name: 'Visskan Elite Services' }],
+  creator: 'Visskan Elite Services',
+  publisher: 'Visskan Elite Services',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
-    type: "website",
-    locale: "en_IN",
-    url: "https://visskan.com",
-    siteName: "Visskan Associates",
-    title: "Visskan Associates | Professional Facility Management Services",
-    description: "Trusted facility management services since 1995. PSARA-certified security, housekeeping, manpower supply for Government, Corporates & Institutions across India.",
+    type: 'website',
+    locale: 'en_IN',
+    url: 'https://viskaneliteservices.com',
+    siteName: 'Visskan Elite Services',
+    title: 'Visskan Elite Services - Professional Facility Management Company',
+    description: 'ISO 9001:2015 certified facility management with 3600+ professionals. Comprehensive security, housekeeping, manpower supply solutions across India.',
     images: [
       {
-        url: "/og-image.png",
+        url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: "Visskan Associates - Professional Facility Management Services",
+        alt: 'Visskan Elite Services - Professional Facility Management',
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Visskan Associates | Facility Management Services",
-    description: "Professional facility management services since 1995. Security, housekeeping, manpower supply across India.",
-    images: ["/twitter-image.png"],
-    creator: "@visskanassociates",
+    card: 'summary_large_image',
+    title: 'Visskan Elite Services - Professional Facility Management',
+    description: 'ISO 9001 certified facility management with 30+ years experience across India.',
+    images: ['/twitter-image.png'],
   },
   robots: {
     index: true,
@@ -69,22 +69,8 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  alternates: {
-    canonical: "https://visskan.com",
-  },
   verification: {
-    google: "google-site-verification-key",
-  },
-  other: {
-    "geo.region": "IN-KA",
-    "geo.placename": "Bangalore",
-    "geo.position": "12.9716;77.5946",
-    "ICBM": "12.9716, 77.5946",
-    "business.contact_data.country_name": "India",
-    "business.contact_data.region": "Karnataka",
-    "business.contact_data.locality": "Bangalore",
-    "business.contact_data.phone_number": "+91-80-23197874",
-    "business.contact_data.email": "mani@visskanaviation.com",
+    google: 'google-site-verification-code', // Replace with actual verification code
   },
 };
 
@@ -142,7 +128,7 @@ export default function RootLayout({
         <meta itemProp="name" content="Visskan Associates" />
         <meta itemProp="description" content="Professional facility management services since 1995" />
         <meta itemProp="telephone" content="+91-80-23197874" />
-        <meta itemProp="email" content="mani@visskanaviation.com" />
+        <meta itemProp="email" content="info@viskaneliteservices.com" />
         <meta itemProp="foundingDate" content="1995" />
         <meta itemProp="areaServed" content="Karnataka, India" />
         

@@ -26,7 +26,7 @@ const StructuredData = ({ type = 'organization', data }: StructuredDataProps) =>
         "@type": "ContactPoint",
         "telephone": "+91-80-23197874",
         "contactType": "customer service",
-        "email": "mani@visskanaviation.com",
+        "email": "info@viskaneliteservices.com",
         "availableLanguage": ["English", "Hindi", "Kannada"]
       },
       "address": {

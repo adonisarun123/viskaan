@@ -1,8 +1,30 @@
-"use client";
-
-import { motion } from "framer-motion";
+import { Metadata } from "next";
 import Link from "next/link";
 import { Shield, Home, Users, Car, Leaf, Coffee, ArrowRight, CheckCircle } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Facility Management Services - Security, Housekeeping, Manpower | Visskan Elite",
+  description: "Comprehensive facility management services by Visskan Elite: PSARA security, professional housekeeping, manpower supply, drivers, horticulture, canteen services. ISO 9001 certified solutions.",
+  keywords: [
+    "facility management services",
+    "security services PSARA licensed",
+    "housekeeping services commercial",
+    "manpower supply company",
+    "driver services corporate",
+    "horticulture landscaping services",
+    "canteen management services",
+    "professional facility services india"
+  ],
+  openGraph: {
+    title: "Complete Facility Management Services - Visskan Elite Services",
+    description: "Expert facility management: Security, housekeeping, manpower, drivers, horticulture & canteen services. 30+ years experience, ISO certified.",
+    url: "https://viskaneliteservices.com/services",
+    type: "website"
+  },
+  alternates: {
+    canonical: "https://viskaneliteservices.com/services"
+  }
+};
 
 export default function ServicesPage() {
   const services = [
@@ -97,17 +119,12 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="relative py-20 bg-gray-100">
         <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center"
-          >
+          <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#003366]">Our Services</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive facility management solutions tailored to your specific needs
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -116,12 +133,8 @@ export default function ServicesPage() {
         <div className="container">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
               >
                 {/* Service Header */}
@@ -150,7 +163,7 @@ export default function ServicesPage() {
                     <ArrowRight size={16} />
                   </Link>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -159,20 +172,14 @@ export default function ServicesPage() {
       {/* Why Choose Our Services */}
       <section className="py-16 bg-white">
         <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
+          <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
               Why Choose Our Services?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               We deliver excellence through our commitment to quality, professionalism, and customer satisfaction
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
@@ -193,17 +200,13 @@ export default function ServicesPage() {
                 description: "Round-the-clock customer support for all services",
               },
             ].map((item, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
                 className="text-center p-6 bg-gray-50 rounded-lg"
               >
                 <h3 className="font-semibold text-gray-800 mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-sm">{item.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -212,12 +215,7 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="py-16 bg-[#003366] text-white">
         <div className="container text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
+          <div className="text-center">
             <h2 className="text-3xl font-bold mb-4">
               Ready to Transform Your Facility Management?
             </h2>
@@ -239,7 +237,7 @@ export default function ServicesPage() {
                 Call: +91 80 23197874
               </a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

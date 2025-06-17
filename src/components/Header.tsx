@@ -48,9 +48,9 @@ const Header = () => {
               <Phone size={14} />
               +91 80 23197874
             </a>
-            <a href="mailto:mani@visskanaviation.com" className="hidden sm:flex items-center gap-2 hover:text-[#FFB300] transition-colors">
+            <a href="mailto:info@viskaneliteservices.com" className="hidden sm:flex items-center gap-2 hover:text-[#FFB300] transition-colors">
               <Mail size={14} />
-              mani@visskanaviation.com
+              info@viskaneliteservices.com
             </a>
           </div>
           <div className="flex items-center gap-4 text-xs">

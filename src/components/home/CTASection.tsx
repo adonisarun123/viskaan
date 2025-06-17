@@ -53,7 +53,7 @@ const CTASection = () => {
             className="mt-12 flex flex-wrap justify-center gap-8 text-[#003366]"
           >
             <div className="flex items-center gap-2">
-              <span className="text-3xl font-bold text-[#FFB300]">25+</span>
+                              <span className="text-3xl font-bold text-[#FFB300]">30+</span>
               <span className="text-sm">Years of Excellence</span>
             </div>
             <div className="flex items-center gap-2">
