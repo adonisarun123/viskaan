@@ -2,9 +2,10 @@
 
 import { MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { config } from "@/lib/config";
 
 const WhatsAppButton = () => {
-  const phoneNumber = "918023197874"; // Replace with actual WhatsApp business number
+  const phoneNumber = config.contact.whatsapp;
   const message = "Hello! I'm interested in your facility management services.";
   
   const handleClick = () => {

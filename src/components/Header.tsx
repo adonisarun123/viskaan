@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown, Phone, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { config } from "@/lib/config";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,14 +19,10 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const services = [
-    { name: "Facility Management", href: "/services/facility-management" },
-    { name: "Security Services", href: "/services/security" },
-    { name: "Drivers", href: "/services/drivers" },
-    { name: "Manpower Supply", href: "/services/manpower" },
-    { name: "Horticulture", href: "/services/horticulture" },
-    { name: "Canteen Services", href: "/services/canteen" },
-  ];
+  const services = config.services.map(service => ({
+    name: service.name,
+    href: `/services/${service.id}`,
+  }));
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -44,13 +41,13 @@ const Header = () => {
       <div className="bg-[#003366] text-white py-2">
         <div className="container flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+918023197874" className="flex items-center gap-2 hover:text-[#FFB300] transition-colors">
+            <a href={`tel:${config.contact.phone}`} className="flex items-center gap-2 hover:text-[#FFB300] transition-colors">
               <Phone size={14} />
-              +91 80 23197874
+              {config.contact.phone}
             </a>
-            <a href="mailto:info@viskaneliteservices.com" className="hidden sm:flex items-center gap-2 hover:text-[#FFB300] transition-colors">
+            <a href={`mailto:${config.contact.email}`} className="hidden sm:flex items-center gap-2 hover:text-[#FFB300] transition-colors">
               <Mail size={14} />
-              info@viskaneliteservices.com
+              {config.contact.email}
             </a>
           </div>
           <div className="flex items-center gap-4 text-xs">
@@ -198,8 +195,12 @@ const Header = () => {
                       )}
                     </div>
                   ))}
-                  <div className="px-4 pt-4">
-                    <Link href="/contact" className="btn-primary block text-center" onClick={() => setIsOpen(false)}>
+                  <div className="px-4 pt-2">
+                    <Link
+                      href="/contact"
+                      onClick={() => setIsOpen(false)}
+                      className="btn-primary w-full text-center"
+                    >
                       Get Quote
                     </Link>
                   </div>
