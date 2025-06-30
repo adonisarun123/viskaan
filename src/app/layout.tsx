@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import StructuredData from "@/components/StructuredData";
+import ErrorBoundary from "@/components/ErrorBoundary";
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -132,12 +133,14 @@ export default function RootLayout({
         <meta itemProp="foundingDate" content="1995" />
         <meta itemProp="areaServed" content="Karnataka, India" />
         
-        <Header />
-        <main className="flex-grow" role="main">
-          {children}
-        </main>
-        <Footer />
-        <WhatsAppButton />
+        <ErrorBoundary>
+          <Header />
+          <main className="flex-grow" role="main">
+            {children}
+          </main>
+          <Footer />
+          <WhatsAppButton />
+        </ErrorBoundary>
       </body>
     </html>
   );
