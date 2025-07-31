@@ -122,7 +122,7 @@ const ModernHeroSection = () => {
             </div>
 
             {/* Main Headline with Glossy Effects */}
-            <div className="space-y-4">
+            <div className="space-y-4 pt-20 lg:pt-0 mt-20 lg:mt-0">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="block text-gray-900 mb-2">Excellence in</span>
                 <span className="block bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-3" 
@@ -142,7 +142,7 @@ const ModernHeroSection = () => {
                           WebkitTextFillColor: 'transparent',
                           filter: 'drop-shadow(0 2px 4px rgba(37,99,235,0.3))'
                         }}>
-                    3600+
+                    2500+
                   </span>
                   <span className="bg-gradient-to-r from-orange-500 via-orange-400 to-red-500 bg-clip-text text-transparent font-extrabold"
                         style={{
@@ -235,7 +235,7 @@ const ModernHeroSection = () => {
                     <span className="text-white font-bold">VA</span>
                   </div>
                   <div>
-                    <div className="font-bold text-gray-900 text-lg">Visskan Elite Services</div>
+                    <div className="font-bold text-gray-900 text-lg">Viskan Elite Services</div>
                     <div className="text-gray-600">Facility Management Expert</div>
                     <div className="flex text-yellow-400 text-lg mt-1">
                       ★★★★★
@@ -326,7 +326,7 @@ export default function Home() {
         </section>
 
         {/* Value Propositions - Why choose us */}
-        <section aria-label="Why Choose Visskan Associates">
+        <section aria-label="Why Choose Viskan Associates">
           <WhyChooseUs />
         </section>
 

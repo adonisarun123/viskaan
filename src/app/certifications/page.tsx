@@ -19,19 +19,6 @@ export default function CertificationsPage() {
       color: "from-blue-500 to-blue-600",
     },
     {
-      icon: <Shield size={64} />,
-      title: "PSARA Licensed",
-      subtitle: "Private Security Agencies Regulation Act",
-      description: "Fully licensed under PSARA to provide security services across multiple states.",
-      benefits: [
-        "Government approved security agency",
-        "Trained and verified security personnel",
-        "Legal compliance assured",
-        "Regular audits and inspections"
-      ],
-      color: "from-red-500 to-red-600",
-    },
-    {
       icon: <FileCheck size={64} />,
       title: "FSSAI Certified",
       subtitle: "Food Safety and Standards Authority of India",
@@ -43,19 +30,6 @@ export default function CertificationsPage() {
         "Regular health checks"
       ],
       color: "from-green-500 to-green-600",
-    },
-    {
-      icon: <Briefcase size={64} />,
-      title: "GST Compliant",
-      subtitle: "Goods and Services Tax",
-      description: "Fully GST compliant ensuring transparent and legal financial transactions.",
-      benefits: [
-        "Transparent billing",
-        "Input tax credit benefits",
-        "Legal compliance",
-        "Digital transaction records"
-      ],
-      color: "from-purple-500 to-purple-600",
     },
     {
       icon: <Users size={64} />,
@@ -107,7 +81,7 @@ export default function CertificationsPage() {
             transition={{ duration: 0.5 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#003366]">Certifications & Compliance</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#003366] pb-2">Certifications & Compliance</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Your assurance of quality, safety, and legal compliance in every service we deliver
             </p>
@@ -134,7 +108,7 @@ export default function CertificationsPage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {certifications.map((cert, index) => (
               <motion.div
                 key={index}
@@ -228,7 +202,7 @@ export default function CertificationsPage() {
                   <CheckCircle className="text-[#4CAF50] mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Legal Protection</h3>
-                    <p className="text-gray-600">Complete compliance protects both our clients and employees from legal complications.</p>
+                    <p className="text-gray-600">Complete compliance protects both our Employers and employees from legal complications.</p>
                   </div>
                 </div>
                 <div className="flex items-start">

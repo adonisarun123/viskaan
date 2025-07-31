@@ -652,8 +652,14 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-gray-800 mb-2">Call Us</h3>
                       <p className="text-gray-600">
-                        <a href="tel:+918023197874" className="hover:text-[#003366] transition-colors">
-                          +91 80 23197874
+                        <a href="tel:+919900615903" className="hover:text-[#003366] transition-colors">
+                          +91 99006 15903
+                        </a> / 
+                        <a href="tel:+919845948819" className="hover:text-[#003366] transition-colors">
+                          +91 98459 48819
+                        </a> / 
+                        <a href="tel:+919845952248" className="hover:text-[#003366] transition-colors">
+                          +91 98459 52248
                         </a>
                       </p>
                     </div>
@@ -691,12 +697,13 @@ export default function ContactPage() {
 
               {/* Additional Information */}
               <div className="bg-[#003366] text-white p-6 rounded-lg">
-                <h3 className="font-semibold mb-3">Why Choose Us?</h3>
+                <h3 className="font-semibold mb-3 pb-2">Why Choose Us?</h3>
                 <ul className="space-y-2 text-sm">
                   <li>• ISO 9001:2015 Certified</li>
                   <li>• PSARA Licensed Security Services</li>
                   <li>• 30+ Years of Experience</li>
-                  <li>• 3600+ Professional Staff</li>
+                  <li>• 2500+ Professional Staff</li>
+                  <li>• FSSAI Registered</li>
                   <li>• 24/7 Customer Support</li>
                 </ul>
               </div>

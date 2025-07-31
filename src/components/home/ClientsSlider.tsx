@@ -35,6 +35,21 @@ const ClientsSlider = () => {
       fullName: "Robert Bosch GmbH",
       logo: "/images/bosch.jpeg" 
     },
+    { 
+      name: "IIA", 
+      fullName: "Indian Institute of Astrophysics",
+      logo: "/images/iia.png" 
+    },
+    { 
+      name: "BMRCL", 
+      fullName: "Bangalore Metro Rail Corporation Limited",
+      logo: "/images/bmrcl.png" 
+    },
+    { 
+      name: "Skanray", 
+      fullName: "Skanray Technologies Limited",
+      logo: "/images/skanray.webp" 
+    },
   ];
 
   const testimonials = [
