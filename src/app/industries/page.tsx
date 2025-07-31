@@ -11,7 +11,7 @@ export default function IndustriesPage() {
       title: "Aerospace & Defense",
       description: "Providing specialized facility management services to India's premier aerospace organizations.",
       clients: ["ISRO", "HAL", "NAL"],
-      services: ["High-security facility management", "Clean room maintenance", "Specialized technical staff"],
+      services: ["Facility Management Services", "Clean room maintenance", "Specialized technical staff"],
       color: "from-blue-500 to-blue-600",
     },
     {
@@ -19,7 +19,7 @@ export default function IndustriesPage() {
       title: "Electronics & Technology",
       description: "Supporting technology leaders with comprehensive facility solutions.",
       clients: ["BEL", "Toshiba", "Tech Parks"],
-      services: ["ESD-safe cleaning", "Technical manpower", "24/7 security services"],
+      services: ["ESD-safe cleaning", "Supply of Technicians", "Supply of Professional Drivers"],
       color: "from-purple-500 to-purple-600",
     },
     {
@@ -27,7 +27,7 @@ export default function IndustriesPage() {
       title: "Education & Research",
       description: "Maintaining prestigious educational institutions and research facilities.",
       clients: ["IIMB", "IIAP", "Research Centers"],
-      services: ["Campus maintenance", "Garden management", "Canteen services"],
+      services: ["Campus maintenance", "Garden management", "Housekeeping Services", "24/7 Security Services and Gun Men"],
       color: "from-green-500 to-green-600",
     },
     {
@@ -35,13 +35,13 @@ export default function IndustriesPage() {
       title: "Infrastructure & Transportation",
       description: "Ensuring smooth operations at critical infrastructure facilities.",
       clients: ["Metro Rail Corporation", "Airports", "Railway Stations"],
-      services: ["Large-scale housekeeping", "Crowd management", "Technical maintenance"],
+      services: ["Industrial housekeeping", "Technical maintenance"],
       color: "from-orange-500 to-orange-600",
     },
     {
       icon: <Factory size={48} />,
       title: "Manufacturing",
-      description: "Supporting manufacturing excellence with reliable facility services.",
+      description: "Supporting manufacturing excellence with reliable resources.",
       clients: ["CEAT", "Bosch", "Manufacturing Plants"],
       services: ["Industrial cleaning", "Skilled workforce", "Safety compliance"],
       color: "from-red-500 to-red-600",
@@ -105,7 +105,7 @@ export default function IndustriesPage() {
               Sector-Specific Excellence
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              With over 25 years of experience, we understand the unique requirements of each industry
+              With over 30 years of experience, we understand the unique requirements of each industry
               and deliver customized solutions that exceed expectations.
             </p>
           </motion.div>
@@ -189,8 +189,8 @@ export default function IndustriesPage() {
               viewport={{ once: true }}
               className="p-6"
             >
-              <div className="text-4xl font-bold text-[#4CAF50] mb-2">500+</div>
-              <p className="text-gray-600">Active Clients</p>
+              <div className="text-4xl font-bold text-[#4CAF50] mb-2">3+</div>
+              <p className="text-gray-600">Decades of continued Services with multiple clients</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -230,7 +230,7 @@ export default function IndustriesPage() {
             </h2>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
               Our experts understand your industry's unique challenges and can design 
-              a custom facility management solution for your organization.
+              a tailored facility management solution for your organization.
             </p>
             <Link
               href="/contact"

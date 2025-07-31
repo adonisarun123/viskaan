@@ -1,6 +1,6 @@
 "use client";
 
-import { Award, Shield, Leaf, CheckCircle } from "lucide-react";
+import { Award, Shield, Leaf, CheckCircle, ClipboardCheck } from "lucide-react";
 
 const CertificationsSlider = () => {
   const certifications = [
@@ -28,6 +28,12 @@ const CertificationsSlider = () => {
       description: "Full compliance with statutory requirements for employee welfare and social security.",
       color: "bg-purple-500",
     },
+    {
+      icon: ClipboardCheck,
+      title: "FSSAI Registered",
+      description: "Ensuring adherence to food safety standards for hygienic and compliant food service operations.",
+      color: "bg-yellow-500",
+    },
   ];
 
   return (
@@ -44,7 +50,7 @@ const CertificationsSlider = () => {
         </div>
 
         {/* Certifications Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certifications.map((cert, index) => {
             const IconComponent = cert.icon;
             return (
@@ -67,7 +73,7 @@ const CertificationsSlider = () => {
             multinational corporations, and prestigious educational organizations across India.
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-lg font-semibold">
-            {["Government Institutions", "MNCs", "Educational Organizations", "Healthcare Facilities"].map((org, index) => (
+            {["Government Institutions", "MNCs", "Educational Organizations", "Healthcare Facilities", "PSUs"].map((org, index) => (
               <span key={index} className="text-[#FFB300]">{org}</span>
             ))}
           </div>

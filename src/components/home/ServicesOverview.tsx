@@ -8,7 +8,7 @@ const ServicesOverview = () => {
     {
       icon: Home,
       title: "Facility Management",
-      description: "Comprehensive housekeeping, pest control, and maintenance services for your premises.",
+      description: "Comprehensive housekeeping, pest control, and other maintenance services for your premises.",
       link: "/services/facility-management",
       color: "bg-blue-500",
     },
@@ -29,7 +29,7 @@ const ServicesOverview = () => {
     {
       icon: Users,
       title: "Manpower Supply",
-      description: "Skilled, semi-skilled, and unskilled workforce for various industry needs.",
+      description: "Skilled, Highly skilled, semi-skilled, and unskilled workforce for various industry needs.",
       link: "/services/manpower",
       color: "bg-purple-500",
     },

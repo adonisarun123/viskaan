@@ -31,7 +31,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#003366] text-white pt-12 pb-6">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           {/* Company Info */}
           <div>
             <div className="mb-4">
@@ -83,6 +83,67 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Operations At */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4 text-[#FFB300]">Operations At</h4>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Bangalore
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Chennai
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Hyderabad
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Cochin
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Kodaikannal
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Kavalur
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Gauribindanur
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Hoskote
+                </p>
+              </div>
+              {/* <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Bangalore
+                </p>
+              </div> */}
+            </div>
+          </div>
+
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-[#FFB300]">Contact Us</h4>
@@ -91,18 +152,19 @@ const Footer = () => {
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
                 <p className="text-gray-300 text-sm">
                   #2, 3rd Floor, 1st Main, Muneshwara Block, 
-                  Mahalakshmi Layout, Bangalore – 560086
+                  Mahalakshmi Layout, Bangalore – 560086, 
+                  India
                 </p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={16} />
                 <div className="text-gray-300 text-sm">
-                  <a href="tel:+918023197874" className="hover:text-white transition-colors">
-                    +91 80 23197874
+                  <a href="tel:+919845952248" className="hover:text-white transition-colors">
+                    +91 98459 52248
                   </a>
                   <span className="mx-1">/</span>
-                  <a href="tel:+918023197959" className="hover:text-white transition-colors">
-                    23197959
+                  <a href="tel:+919482145072" className="hover:text-white transition-colors">
+                    +91 94821 45072
                   </a>
                 </div>
               </div>

@@ -31,7 +31,7 @@ export default function ServicesPage() {
     {
       icon: <Home size={48} />,
       title: "Facility Management",
-      description: "Comprehensive housekeeping, pest control, and maintenance services for your premises.",
+      description: "Comprehensive housekeeping, pest control, and other maintenance services for your premises.",
       features: [
         "Indoor & Outdoor Housekeeping",
         "Commercial & Institutional Cleaning",

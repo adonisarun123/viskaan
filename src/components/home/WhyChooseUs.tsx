@@ -8,22 +8,22 @@ const WhyChooseUs = () => {
     {
       icon: Users,
       title: "Professional Workforce",
-      description: "Over 3600 trained professionals delivering quality services with expertise and dedication.",
+      description: "Over 2500 trained professionals delivering quality services with expertise and dedication.",
     },
     {
       icon: Globe,
       title: "Regional Expertise", 
-      description: "Strong presence across Karnataka with deep understanding of local requirements and regulations.",
+      description: "Strong presence across Southern States with deep understanding of local requirements and regulations.",
     },
     {
       icon: Leaf,
       title: "Sustainable Practices",
-      description: "Eco-friendly solutions and green practices integrated into all our service offerings.",
+      description: "Through our eco-friendly digital solutions and green practices, we are embedding sustainability into every aspect of our service offerings.",
     },
     {
       icon: TrendingDown,
       title: "Cost Efficiency",
-      description: "Competitive pricing without compromising on quality, helping you optimize operational costs.",
+      description: "Competitive pricing without compromising on quality, safety, or statutory compliance—helping you optimize operational costs with confidence.",
     },
   ];
 
@@ -34,6 +34,7 @@ const WhyChooseUs = () => {
     "24/7 Customer Support",
     "Regular Training Programs",
     "Technology-Enabled Services",
+    "FSSAI Compliant Food Services",
   ];
 
   return (
@@ -45,10 +46,8 @@ const WhyChooseUs = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
               Why Choose <span className="text-[#003366]">Viskan Elite Services</span>
             </h2>
-            <p className="text-lg text-gray-600 mb-8">
-              Since 1995, we&rsquo;ve been setting industry standards in facility management services. 
-              Our commitment to excellence, professional workforce, and customer-centric approach 
-              make us the preferred partner for leading organizations across India.
+            <p className="text-lg text-gray-600 mb-8 pt-4">
+              For nearly 30 years, our customer-first and flexible service model has helped top organizations across India thrive.
             </p>
 
             {/* Features Grid */}
@@ -108,7 +107,7 @@ const WhyChooseUs = () => {
               <div className="pt-6 border-t">
                 <p className="text-sm text-gray-600 mb-4">Trusted by:</p>
                 <p className="text-sm font-semibold text-gray-700">
-                  ISRO • BEL • HAL • IIMB • Toshiba
+                  BEL • IIA • BMRCL • ISRO • TOSHIBA • HAL
                 </p>
               </div>
             </div>

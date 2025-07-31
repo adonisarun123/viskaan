@@ -107,7 +107,7 @@ export default function CareersPage() {
   ];
 
   const careerStats = [
-    { number: "3600+", label: "Current Employees" },
+    { number: "2500+", label: "Current Employees" },
     { number: "95%", label: "Employee Retention" },
     { number: "500+", label: "Annual Promotions" },
     { number: "100%", label: "Statutory Compliance" },
@@ -126,7 +126,7 @@ export default function CareersPage() {
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#003366]">Join Our Growing Team</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Build a rewarding career with Karnataka's leading facility management company
+              Build a rewarding career with India's leading facility management company
             </p>
           </motion.div>
         </div>
@@ -143,7 +143,7 @@ export default function CareersPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Why Work With Visskan?
+              Why Work With Viskan?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               We believe our employees are our greatest asset. Join us to be part of a company 
@@ -403,9 +403,9 @@ export default function CareersPage() {
               <div className="mt-8 p-6 bg-[#003366] text-white rounded-lg">
                 <h4 className="text-lg font-semibold mb-2">Send Your Application</h4>
                 <p className="mb-4">Email your resume with the job title in subject line to:</p>
-                <a href="mailto:hr@visskanassociates.com" className="flex items-center text-[#FFB300] hover:text-[#e6a200]">
+                <a href="mailto:hr@viskaneliteservices.com" className="flex items-center text-[#FFB300] hover:text-[#e6a200]">
                   <Mail size={20} className="mr-2" />
-                  hr@visskanassociates.com
+                  hr@viskaneliteservices.com
                 </a>
               </div>
             </div>

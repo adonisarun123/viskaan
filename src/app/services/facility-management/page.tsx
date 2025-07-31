@@ -1,7 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Building, CheckCircle, Users, Wrench, ShieldCheck, ClipboardList, ArrowRight } from "lucide-react";
+import {
+  Building,
+  CheckCircle,
+  Users,
+  Wrench,
+  ShieldCheck,
+  ClipboardList,
+  ArrowRight,
+} from "lucide-react";
 import Link from "next/link";
 
 export default function FacilityManagementPage() {
@@ -9,22 +17,26 @@ export default function FacilityManagementPage() {
     {
       icon: <ClipboardList size={24} />,
       title: "Integrated Facility Management",
-      description: "Complete management of all facility services under one umbrella for seamless operations.",
+      description:
+        "Complete management of all facility services under one umbrella for seamless operations.",
     },
     {
       icon: <Wrench size={24} />,
       title: "Technical Services",
-      description: "Electrical, plumbing, HVAC maintenance, and specialized equipment management.",
+      description:
+        "Electrical, plumbing, HVAC maintenance, and specialized equipment management.",
     },
     {
       icon: <Users size={24} />,
-      title: "Soft Services",
-      description: "Housekeeping, landscaping, pest control, and waste management services.",
+      title: "Industrial Manpower Supply",
+      description:
+        "We provide all categories of manpower tailored to meet the specific needs of industries and logistics.",
     },
     {
       icon: <ShieldCheck size={24} />,
       title: "Compliance Management",
-      description: "Ensuring adherence to all statutory requirements and safety standards.",
+      description:
+        "Ensuring adherence to all statutory requirements and safety standards.",
     },
   ];
 
@@ -54,7 +66,8 @@ export default function FacilityManagementPage() {
     {
       step: 1,
       title: "Site Assessment",
-      description: "Comprehensive evaluation of facility requirements and current state",
+      description:
+        "Comprehensive evaluation of facility requirements and current state",
     },
     {
       step: 2,
@@ -64,12 +77,14 @@ export default function FacilityManagementPage() {
     {
       step: 3,
       title: "Implementation",
-      description: "Smooth transition and deployment of services with minimal disruption",
+      description:
+        "Smooth transition and deployment of services with minimal disruption",
     },
     {
       step: 4,
       title: "Continuous Monitoring",
-      description: "Regular audits and performance tracking for service excellence",
+      description:
+        "Regular audits and performance tracking for service excellence",
     },
   ];
 
@@ -91,12 +106,13 @@ export default function FacilityManagementPage() {
               <ArrowRight size={16} className="mr-2 rotate-180" />
               Back to Services
             </Link>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#003366] mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#003366] mb-4 pb-2">
               Facility Management Services
             </h1>
             <p className="text-xl text-gray-600">
-              Comprehensive facility solutions that ensure operational excellence, 
-              compliance, and optimal resource utilization for your organization.
+              Comprehensive facility solutions that ensure operational
+              excellence, compliance, and optimal resource utilization for your
+              organization.
             </p>
           </motion.div>
         </div>
@@ -112,20 +128,21 @@ export default function FacilityManagementPage() {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6 pb-2">
                 Complete Facility Solutions Under One Roof
               </h2>
               <p className="text-gray-600 mb-6">
-                With over 25 years of experience, Visskan Associates delivers integrated 
-                facility management services that combine technical expertise, operational 
-                efficiency, and cost-effectiveness. Our comprehensive approach ensures your 
-                facilities operate at peak performance while maintaining the highest standards 
-                of safety and compliance.
+                With over 30 years of experience, Viskan Elite Services delivers
+                integrated facility management services that combine technical
+                expertise, operational efficiency, and cost-effectiveness. Our
+                comprehensive approach ensures your facilities operate at peak
+                performance while maintaining the highest standards of safety
+                and compliance.
               </p>
               <p className="text-gray-600 mb-6">
-                From day-to-day maintenance to strategic facility planning, we handle every 
-                aspect of facility management, allowing you to focus on your core business 
-                operations.
+                From day-to-day maintenance to strategic facility planning, we
+                handle every aspect of facility management, allowing you to
+                focus on your core business operations.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center">
@@ -134,7 +151,7 @@ export default function FacilityManagementPage() {
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="text-[#4CAF50] mr-2" />
-                  <span className="font-semibold">500+ Facilities Managed</span>
+                  <span className="font-semibold">250+ Facilities Managed</span>
                 </div>
               </div>
             </motion.div>
@@ -167,7 +184,8 @@ export default function FacilityManagementPage() {
               Our Service Categories
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Comprehensive facility management services tailored to your specific needs
+              Comprehensive facility management services tailored to your
+              specific needs
             </p>
           </motion.div>
 
@@ -184,7 +202,9 @@ export default function FacilityManagementPage() {
                 <div className="w-12 h-12 bg-[#003366] text-white rounded-lg flex items-center justify-center mb-4">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">{service.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  {service.title}
+                </h3>
                 <p className="text-gray-600">{service.description}</p>
               </motion.div>
             ))}
@@ -215,7 +235,10 @@ export default function FacilityManagementPage() {
                     viewport={{ once: true }}
                     className="flex items-center"
                   >
-                    <CheckCircle className="text-[#4CAF50] mr-3 flex-shrink-0" size={20} />
+                    <CheckCircle
+                      className="text-[#4CAF50] mr-3 flex-shrink-0"
+                      size={20}
+                    />
                     <span className="text-gray-700">{feature}</span>
                   </motion.div>
                 ))}
@@ -264,7 +287,8 @@ export default function FacilityManagementPage() {
               Our Service Process
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              A systematic approach to delivering excellence in facility management
+              A systematic approach to delivering excellence in facility
+              management
             </p>
           </motion.div>
 
@@ -281,7 +305,9 @@ export default function FacilityManagementPage() {
                 <div className="w-16 h-16 bg-[#003366] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {item.title}
+                </h3>
                 <p className="text-gray-600">{item.description}</p>
               </motion.div>
             ))}
@@ -312,10 +338,12 @@ export default function FacilityManagementPage() {
               viewport={{ once: true }}
               className="bg-blue-50 rounded-xl p-6"
             >
-              <h3 className="text-xl font-semibold text-blue-800 mb-3">Cost Optimization</h3>
+              <h3 className="text-xl font-semibold text-blue-800 mb-3">
+                Cost Optimization
+              </h3>
               <p className="text-blue-700">
-                Reduce operational costs by up to 20% through efficient resource management 
-                and preventive maintenance strategies.
+                Reduce operational costs by up to 20% through efficient resource
+                management and preventive maintenance strategies.
               </p>
             </motion.div>
 
@@ -326,10 +354,13 @@ export default function FacilityManagementPage() {
               viewport={{ once: true }}
               className="bg-green-50 rounded-xl p-6"
             >
-              <h3 className="text-xl font-semibold text-green-800 mb-3">Enhanced Productivity</h3>
+              <h3 className="text-xl font-semibold text-green-800 mb-3">
+                Enhanced Productivity
+              </h3>
               <p className="text-green-700">
-                Create optimal working environments that boost employee productivity and 
-                satisfaction through well-maintained facilities.
+                Create optimal working environments that boost employee
+                productivity and satisfaction through well-maintained
+                facilities.
               </p>
             </motion.div>
 
@@ -340,10 +371,12 @@ export default function FacilityManagementPage() {
               viewport={{ once: true }}
               className="bg-purple-50 rounded-xl p-6"
             >
-              <h3 className="text-xl font-semibold text-purple-800 mb-3">Risk Mitigation</h3>
+              <h3 className="text-xl font-semibold text-purple-800 mb-3">
+                Risk Mitigation
+              </h3>
               <p className="text-purple-700">
-                Ensure compliance with all regulations and minimize operational risks 
-                through proactive management and regular audits.
+                Ensure compliance with all regulations and minimize operational
+                risks through proactive management and regular audits.
               </p>
             </motion.div>
           </div>
@@ -363,7 +396,8 @@ export default function FacilityManagementPage() {
               Ready to Optimize Your Facility Operations?
             </h2>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-              Let our experts design a customized facility management solution for your organization
+              Let our experts design a customized facility management solution
+              for your organization
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -384,4 +418,4 @@ export default function FacilityManagementPage() {
       </section>
     </div>
   );
-} 
+}
