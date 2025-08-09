@@ -23,7 +23,7 @@ export default function ClientsPage() {
       services: ["Facility Management", "Security", "Technical Manpower"],
       duration: "25+ years",
       description:
-        "Supporting BEL's critical defense electronics manufacturing facilities.",
+        "Fulfill BEL’s resource needs through deployment of trained and competent staff",
     },
     {
       name: "Hindustan Aeronautics Limited (HAL)",
@@ -241,69 +241,10 @@ export default function ClientsPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 bg-white">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              What Our Clients Say
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Don't just take our word for it - hear from our satisfied clients
-            </p>
-          </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-gray-50 rounded-xl p-8 relative"
-              >
-                <Quote
-                  className="absolute top-4 right-4 text-gray-200"
-                  size={48}
-                />
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="text-[#FFB300] fill-current"
-                      size={20}
-                    />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-6 italic relative z-10">
-                  "{testimonial.quote}"
-                </p>
-                <div className="border-t pt-4">
-                  <p className="font-semibold text-gray-800">
-                    {testimonial.name}
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    {testimonial.position}
-                  </p>
-                  <p className="text-sm text-[#003366] font-medium">
-                    {testimonial.company}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Experience Certificates */}
-      {/* <section className="py-16 bg-white">
+      <section className="py-16 bg-white">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -320,57 +261,67 @@ export default function ClientsPage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                org: "ISRO",
-                img: "/certificates/isro.jpg",
-                link: "/certificates/isro.pdf",
+                title: "ISRO Experience Certificate",
+                image: "/images/experience/isro-certificate.svg",
+                description: "Certificate of experience from Indian Space Research Organisation",
               },
               {
-                org: "IIM Bangalore",
-                img: "/certificates/iim.jpg",
-                link: "/certificates/iim.pdf",
+                title: "BEL Experience Certificate",
+                image: "/images/experience/bel-certificate.svg",
+                description: "Certificate of experience from Bharat Electronics Limited",
               },
               {
-                org: "Bengaluru Metro",
-                img: "/certificates/metro.jpg",
-                link: "/certificates/metro.pdf",
+                title: "IIM-B Experience Certificate",
+                image: "/images/experience/iimb-certificate.svg",
+                description: "Certificate of experience from Indian Institute of Management Bangalore",
               },
-              {
-                org: "Toshiba India",
-                img: "/certificates/toshiba.jpg",
-                link: "/certificates/toshiba.pdf",
-              },
-            ].map((cert, index) => (
+            ].map((certificate, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="relative overflow-hidden rounded-xl shadow-md group"
+                className="group relative bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 cursor-pointer"
               >
-                <img
-                  src={cert.img}
-                  alt={`${cert.org} Certificate`}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a
-                    href={cert.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white text-[#003366] font-semibold px-4 py-2 rounded shadow hover:bg-gray-200 transition"
-                  >
-                    View
-                  </a>
+                <div className="mb-4">
+                  <div className="w-16 h-16 bg-[#FFB300] rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800 text-center mb-2">
+                    {certificate.title}
+                  </h3>
+                  <p className="text-gray-600 text-center text-sm">
+                    {certificate.description}
+                  </p>
+                </div>
+
+                {/* Hover Certificate View */}
+                <div className="absolute inset-0 bg-black bg-opacity-90 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-2">
+                  <div className="relative">
+                    <img
+                      src={certificate.image}
+                      alt={certificate.title}
+                      className="rounded-lg shadow-xl max-w-full h-auto"
+                      width="600"
+                      height="450"
+                    />
+                  </div>
+                </div>
+
+                <div className="text-center">
+                  <p className="text-xs text-gray-500">Hover to view certificate</p>
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* All Clients Grid */}
       <section className="py-16 bg-gray-50">

@@ -17,11 +17,6 @@ export default function DriversPage() {
       description: "Reliable personal drivers for families and individuals with flexible schedules.",
     },
     {
-      icon: <Shield size={32} />,
-      title: "Security Drivers",
-      description: "Trained security drivers for VIP transportation and high-security requirements.",
-    },
-    {
       icon: <Clock size={32} />,
       title: "On-Demand Services",
       description: "Flexible driver services available on-demand for special events and occasions.",
@@ -95,7 +90,7 @@ export default function DriversPage() {
               Professional Driver Services
             </h1>
             <p className="text-xl text-gray-600">
-              Reliable, verified, and professional drivers for all your transportation needs 
+              Reliable, verified, and professional drivers for all your transportation needs
               with complete background verification and commercial licensing.
             </p>
           </motion.div>
@@ -116,20 +111,20 @@ export default function DriversPage() {
                 Trusted Driver Solutions for Every Need
               </h2>
               <p className="text-gray-600 mb-6">
-                Visskan Associates provides professional driver services with a focus on safety, 
-                reliability, and customer satisfaction. Our drivers undergo rigorous background 
-                verification, possess valid commercial licenses, and are trained in professional 
+                Viskan Elite Services provides professional driver services with a focus on safety,
+                reliability, and customer satisfaction. Our drivers undergo rigorous background
+                verification, possess valid commercial licenses, and are trained in professional
                 conduct and customer service.
               </p>
               <p className="text-gray-600 mb-6">
-                Whether you need corporate drivers for executive transportation, personal drivers 
-                for family use, or specialized drivers for events, we have the right professionals 
+                Whether you need corporate drivers for executive transportation, personal drivers
+                for family use, or specialized drivers for events, we have the right professionals
                 to meet your requirements.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center">
                   <CheckCircle className="text-[#4CAF50] mr-2" />
-                  <span className="font-semibold">1000+ Verified Drivers</span>
+                  <span className="font-semibold">100+ Verified Drivers</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="text-[#4CAF50] mr-2" />
@@ -170,7 +165,7 @@ export default function DriversPage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <motion.div
                 key={index}
@@ -302,7 +297,7 @@ export default function DriversPage() {
               Need Professional Drivers?
             </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Contact us today to discuss your driver requirements and get a customized solution 
+              Contact us today to discuss your driver requirements and get a customized solution
               for your transportation needs.
             </p>
             <Link

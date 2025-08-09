@@ -39,7 +39,7 @@ const Footer = () => {
               <p className="text-white text-sm uppercase tracking-wide">Elite Services</p>
             </div>
             <p className="text-gray-300 mb-4">
-              End-to-End Facility Management Services Since 1995. Trusted by Government, 
+              End-to-End Facility Management Services Since 1995. Trusted by Government,
               Corporates & Institutions across India.
             </p>
             <div className="flex gap-4">
@@ -135,12 +135,54 @@ const Footer = () => {
                   Hoskote
                 </p>
               </div>
-              {/* <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
                 <p className="text-gray-300 text-sm">
-                  Bangalore
+                  Bhuvaneshwar
                 </p>
-              </div> */}
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Chandigarh
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Kolkata
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Mumbai
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Pune
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Lucknow
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Jaipur
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  Delhi
+                </p>
+              </div>
             </div>
           </div>
 
@@ -151,8 +193,8 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
                 <p className="text-gray-300 text-sm">
-                  #2, 3rd Floor, 1st Main, Muneshwara Block, 
-                  Mahalakshmi Layout, Bangalore – 560086, 
+                  #2, 3rd Floor, 1st Main, Muneshwara Block,
+                  Mahalakshmi Layout, Bangalore – 560086,
                   India
                 </p>
               </div>
@@ -170,9 +212,9 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={16} />
-                            <a href="mailto:info@viskaneliteservices.com" className="text-gray-300 text-sm hover:text-white transition-colors">
-              info@viskaneliteservices.com
-            </a>
+                <a href="mailto:info@viskaneliteservices.com" className="text-gray-300 text-sm hover:text-white transition-colors">
+                  info@viskaneliteservices.com
+                </a>
               </div>
             </div>
           </div>

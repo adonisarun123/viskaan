@@ -34,6 +34,12 @@ const CertificationsSlider = () => {
       description: "Ensuring adherence to food safety standards for hygienic and compliant food service operations.",
       color: "bg-yellow-500",
     },
+    {
+      icon: ClipboardCheck,
+      title: "TAX Compliant",
+      description: "Full compliance with all tax regulations and statutory requirements.",
+      color: "bg-orange-500",
+    },
   ];
 
   return (

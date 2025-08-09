@@ -19,6 +19,19 @@ export default function CertificationsPage() {
       color: "from-blue-500 to-blue-600",
     },
     {
+      icon: <Shield size={64} />,
+      title: "PSARA Licensed",
+      subtitle: "Private Security Agencies Regulation Act",
+      description: "Licensed under PSARA to provide security services across multiple states.",
+      benefits: [
+        "Government approved security agency",
+        "Trained and verified security personnel",
+        "Legal compliance assured",
+        "Regular audits and inspections"
+      ],
+      color: "from-red-500 to-red-600",
+    },
+    {
       icon: <FileCheck size={64} />,
       title: "FSSAI Certified",
       subtitle: "Food Safety and Standards Authority of India",
@@ -30,6 +43,19 @@ export default function CertificationsPage() {
         "Regular health checks"
       ],
       color: "from-green-500 to-green-600",
+    },
+    {
+      icon: <Briefcase size={64} />,
+      title: "GST Compliant",
+      subtitle: "Goods and Services Tax",
+      description: "GST compliant ensuring transparent and legal financial transactions.",
+      benefits: [
+        "Transparent billing",
+        "Input tax credit benefits",
+        "Legal compliance",
+        "Digital transaction records"
+      ],
+      color: "from-purple-500 to-purple-600",
     },
     {
       icon: <Users size={64} />,
@@ -108,7 +134,7 @@ export default function CertificationsPage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {certifications.map((cert, index) => (
               <motion.div
                 key={index}

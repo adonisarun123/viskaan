@@ -1,0 +1,63 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa"/>
+      <stop offset="100%" style="stop-color:#e9ecef"/>
+    </linearGradient>
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#003366"/>
+      <stop offset="100%" style="stop-color:#1e40af"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg)"/>
+  
+  <!-- Border -->
+  <rect x="10" y="10" width="380" height="280" fill="none" stroke="url(#border)" stroke-width="2"/>
+  
+  <!-- Header -->
+  <text x="200" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#003366">
+    CERTIFICATE OF EXPERIENCE
+  </text>
+  
+  <!-- ISRO Logo Placeholder -->
+  <circle cx="200" cy="80" r="25" fill="#003366"/>
+  <text x="200" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+    ISRO
+  </text>
+  
+  <!-- Certificate Content -->
+  <text x="200" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">
+    This is to certify that
+  </text>
+  <text x="200" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#003366">
+    VISSKAN ASSOCIATES
+  </text>
+  <text x="200" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">
+    has successfully provided facility management services
+  </text>
+  <text x="200" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">
+    to Indian Space Research Organisation
+  </text>
+  <text x="200" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">
+    from January 2020 to December 2024
+  </text>
+  
+  <!-- Signature lines -->
+  <line x1="80" y1="240" x2="160" y2="240" stroke="#333" stroke-width="1"/>
+  <text x="120" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    Authorized Signatory
+  </text>
+  
+  <line x1="240" y1="240" x2="320" y2="240" stroke="#333" stroke-width="1"/>
+  <text x="280" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    Date: 15/01/2024
+  </text>
+  
+  <!-- Seal -->
+  <circle cx="200" cy="220" r="15" fill="none" stroke="#003366" stroke-width="2"/>
+  <text x="200" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#003366">
+    SEAL
+  </text>
+</svg>

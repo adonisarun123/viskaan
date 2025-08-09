@@ -1,0 +1,68 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef7ed"/>
+      <stop offset="100%" style="stop-color:#fed7aa"/>
+    </linearGradient>
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ea580c"/>
+      <stop offset="100%" style="stop-color:#f97316"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg)"/>
+  
+  <!-- Border -->
+  <rect x="10" y="10" width="380" height="280" fill="none" stroke="url(#border)" stroke-width="2"/>
+  
+  <!-- Header -->
+  <text x="200" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ea580c">
+    CERTIFICATE OF COMPLETION
+  </text>
+  
+  <!-- IIM-B Logo Placeholder -->
+  <rect x="175" y="60" width="50" height="35" fill="#ea580c"/>
+  <text x="200" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">
+    IIM-B
+  </text>
+  
+  <!-- Certificate Content -->
+  <text x="200" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">
+    This certificate is awarded to
+  </text>
+  <text x="200" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ea580c">
+    VISSKAN ASSOCIATES
+  </text>
+  <text x="200" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">
+    for successful completion of facility management
+  </text>
+  <text x="200" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">
+    services contract with Indian Institute of Management
+  </text>
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">
+    Bangalore from June 2021 to December 2024
+  </text>
+  
+  <!-- Performance details -->
+  <text x="200" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    Performance: Excellent | Quality: Outstanding
+  </text>
+  
+  <!-- Signature lines -->
+  <line x1="80" y1="240" x2="160" y2="240" stroke="#333" stroke-width="1"/>
+  <text x="120" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    Director (Admin)
+  </text>
+  
+  <line x1="240" y1="240" x2="320" y2="240" stroke="#333" stroke-width="1"/>
+  <text x="280" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    Date: 31/12/2024
+  </text>
+  
+  <!-- Institute seal -->
+  <circle cx="200" cy="220" r="12" fill="none" stroke="#ea580c" stroke-width="2"/>
+  <text x="200" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#ea580c">
+    SEAL
+  </text>
+</svg>

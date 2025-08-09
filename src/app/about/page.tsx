@@ -19,6 +19,16 @@ export default function AboutPage() {
       name: "Surekha H R",
       designation: "Head HR",
       bio: "Human resources leader focused on talent management, organizational development, and people-first culture."
+    },
+    {
+      name: "V.S. Manimaran",
+      designation: "Managing Director",
+      bio: "Founder and visionary leader with 25 years of experience in facility management."
+    },
+    {
+      name: "Tharani Ashok",
+      designation: "Director",
+      bio: "Strategic business development and operations management expert."
     }
 
   ];
@@ -172,7 +182,7 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-5 gap-8">
             {leadership.map((leader, index) => (
               <motion.div
                 key={index}

@@ -41,7 +41,7 @@ export const config = {
     url: requiredEnvVars.NEXT_PUBLIC_SITE_URL || 'https://viskaneliteservices.com',
     name: 'Visskan Elite Services',
     description: 'Professional facility management company since 1995',
-    phone: '+91 80 23197874',
+    phone: '+91 94 82145072',
     email: requiredEnvVars.NEXT_PUBLIC_CONTACT_EMAIL || 'info@viskaneliteservices.com',
     address: {
       street: '#2, 3rd Floor, 1st Main, Muneshwara Block, Mahalakshmi Layout',
@@ -59,9 +59,9 @@ export const config = {
 
   // Contact configuration
   contact: {
-    whatsapp: requiredEnvVars.NEXT_PUBLIC_WHATSAPP_NUMBER || '918023197874',
+    whatsapp: requiredEnvVars.NEXT_PUBLIC_WHATSAPP_NUMBER || '919482145072',
     email: requiredEnvVars.NEXT_PUBLIC_CONTACT_EMAIL || 'info@viskaneliteservices.com',
-    phone: '+91 80 23197874',
+    phone: '+91 94 82145072',
   },
 
   // Services configuration
