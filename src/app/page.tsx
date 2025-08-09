@@ -7,11 +7,11 @@ import ClientsSlider from "@/components/home/ClientsSlider";
 import CTASection from "@/components/home/CTASection";
 
 export const metadata: Metadata = {
-  title: "Visskan Elite Services - Professional Facility Management Company India | ISO 9001 Certified",
-  description: "Visskan Elite Services: India's premier facility management company since 1995. ISO 9001:2015 certified with 3600+ professionals. PSARA licensed security, housekeeping, manpower supply, drivers, horticulture & canteen services across Karnataka.",
+  title: "Viskan Elite Services - Professional Facility Management Company India | ISO 9001 Certified",
+  description: "Viskan Elite Services: India's premier facility management company since 1995. ISO 9001:2015 certified with 3600+ professionals. PSARA licensed security, housekeeping, manpower supply, drivers, horticulture & canteen services across Karnataka.",
   keywords: [
     "facility management company india",
-    "Visskan Elite Services",
+    "Viskan Elite Services",
     "professional facility management bangalore",
     "ISO 9001 facility management",
     "PSARA licensed security services",
@@ -25,23 +25,23 @@ export const metadata: Metadata = {
     "industrial facility management"
   ],
   openGraph: {
-    title: "Visskan Elite Services - Premier Facility Management Company Since 1995",
+    title: "Viskan Elite Services - Premier Facility Management Company Since 1995",
     description: "ISO 9001:2015 certified facility management with 3600+ professionals. Comprehensive security, housekeeping, manpower supply solutions across India. Trusted by Government & MNCs.",
     url: "https://viskaneliteservices.com",
-    siteName: "Visskan Elite Services",
+    siteName: "Viskan Elite Services",
     type: "website",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Visskan Elite Services - Professional Facility Management"
+        alt: "Viskan Elite Services - Professional Facility Management"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Visskan Elite Services - Professional Facility Management Company",
+    title: "Viskan Elite Services - Professional Facility Management Company",
     description: "ISO 9001 certified facility management with 30+ years experience. Security, housekeeping, manpower supply across India.",
     images: ["/twitter-image.png"]
   },
@@ -68,26 +68,26 @@ const faqData = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What facility management services does Visskan Associates provide?",
+      "name": "What facility management services does Viskan Associates provide?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Visskan Associates provides comprehensive facility management services including: Security services (PSARA certified), Housekeeping and cleaning, Manpower supply, Driver services, Horticulture and landscaping, Canteen management, Pest control, and Maintenance services."
+        "text": "Viskan Associates provides comprehensive facility management services including: Security services (PSARA certified), Housekeeping and cleaning, Manpower supply, Driver services, Horticulture and landscaping, Canteen management, Pest control, and Maintenance services."
       }
     },
     {
       "@type": "Question", 
-      "name": "Is Visskan Associates ISO certified?",
+      "name": "Is Viskan Associates ISO certified?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Visskan Associates is ISO 9001:2015 certified for Quality Management Systems, ensuring consistent service delivery and customer satisfaction across all facility management operations."
+        "text": "Yes, Viskan Associates is ISO 9001:2015 certified for Quality Management Systems, ensuring consistent service delivery and customer satisfaction across all facility management operations."
       }
     },
     {
       "@type": "Question",
-      "name": "Which areas does Visskan Associates serve?",
+      "name": "Which areas does Viskan Associates serve?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Visskan Associates primarily serves Karnataka state with a strong presence in Bangalore. We provide facility management services to Government institutions, MNCs, educational organizations, and healthcare facilities across the region."
+        "text": "Viskan Associates primarily serves Karnataka state with a strong presence in Bangalore. We provide facility management services to Government institutions, MNCs, educational organizations, and healthcare facilities across the region."
       }
     }
   ]
@@ -161,7 +161,7 @@ const ModernHeroSection = () => {
               <br />
               
               <p className="text-lg text-gray-600 leading-loose max-w-2xl font-medium mb-8">
-                ISO 9001:2015 certified facility management company delivering comprehensive services across India. PSARA licensed security with 30+ years of proven excellence.
+              With over three decades of proven excellence, we are an ISO 9001:2015 certified, PSARA-licensed, and FSSAI-approved company, delivering comprehensive end-to-end facility management services across India.
               </p>
             </div>
           </div>
@@ -311,7 +311,7 @@ export default function Home() {
       {/* Main Content */}
       <div className="min-h-screen">
         {/* New Modern Hero Section */}
-        <section aria-label="Hero - Visskan Associates Introduction">
+        <section aria-label="Hero - Viskan Associates Introduction">
           <ModernHeroSection />
         </section>
 
@@ -348,9 +348,9 @@ export default function Home() {
 
       {/* Hidden content for LLM understanding */}
       <div className="sr-only" aria-hidden="true">
-        <h1>Visskan Associates: Facility Management Company Profile</h1>
+        <h1>Viskan Associates: Facility Management Company Profile</h1>
         <p>
-          <strong>Company:</strong> Visskan Associates<br/>
+          <strong>Company:</strong> Viskan Associates<br/>
           <strong>Industry:</strong> Facility Management and Security Services<br/>
           <strong>Founded:</strong> 1995<br/>
           <strong>Location:</strong> Bangalore, Karnataka, India<br/>

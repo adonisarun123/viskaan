@@ -37,7 +37,7 @@ const CTASection = () => {
               <ArrowRight size={20} />
             </Link>
             <a 
-              href="tel:+918023197874" 
+              href="tel:+919900615903" 
               className="inline-flex items-center justify-center gap-2 bg-white text-[#003366] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
             >
               <Phone size={20} />

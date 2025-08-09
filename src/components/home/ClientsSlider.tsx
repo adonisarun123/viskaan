@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
 
 const ClientsSlider = () => {
+  const [selectedCertificate, setSelectedCertificate] = useState<string | null>(null);
+
   const clients = [
     { 
       name: "ISRO", 
@@ -121,35 +124,103 @@ const ClientsSlider = () => {
           </div>
         </div>
 
-        {/* Testimonials */}
+        {/* Experience Certificates */}
         <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
+          {[
+            {
+              title: "ISRO Experience Certificate",
+              image: "/images/experience/isro-certificate.svg",
+              description: "Certificate of experience from Indian Space Research Organisation",
+            },
+            {
+              title: "BEL Experience Certificate",
+              image: "/images/experience/bel-certificate.svg",
+              description: "Certificate of experience from Bharat Electronics Limited",
+            },
+            {
+              title: "IIM-B Experience Certificate",
+              image: "/images/experience/iimb-certificate.svg",
+              description: "Certificate of experience from Indian Institute of Management Bangalore",
+            },
+          ].map((certificate, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
+              className="group relative bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 cursor-pointer"
             >
               <div className="mb-4">
-                <svg
-                  className="w-8 h-8 text-[#FFB300]"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                </svg>
+                <div className="w-16 h-16 bg-[#FFB300] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
               </div>
-              <p className="text-gray-700 mb-4 italic">&ldquo;{testimonial.quote}&rdquo;</p>
-              <div>
-                <p className="font-semibold text-gray-800">{testimonial.author}</p>
-                <p className="text-sm text-gray-600">{testimonial.company}</p>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">{certificate.title}</h3>
+              <p className="text-sm text-gray-600 text-center mb-4">{certificate.description}</p>
+              
+              {/* Hover Certificate View */}
+              <div className="absolute inset-0 bg-black bg-opacity-90 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-2">
+                <div className="relative">
+                  <Image
+                    src={certificate.image}
+                    alt={certificate.title}
+                    width={600}
+                    height={450}
+                    className="rounded-lg shadow-xl max-w-full h-auto cursor-pointer"
+                    sizes="(max-width: 768px) 90vw, 600px"
+                    onClick={() => setSelectedCertificate(certificate.image)}
+                  />
+                  <div 
+                    className="absolute top-2 right-2 bg-white rounded-full p-2 cursor-pointer hover:bg-gray-100 transition-colors"
+                    onClick={() => setSelectedCertificate(certificate.image)}
+                  >
+                    <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <p className="text-xs text-gray-500">Hover to view certificate</p>
               </div>
             </motion.div>
           ))}
         </div>
       </div>
+
+      {/* Fullscreen Modal */}
+      {selectedCertificate && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedCertificate(null)}
+        >
+          <div 
+            className="relative max-w-4xl max-h-full"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image
+              src={selectedCertificate}
+              alt="Certificate Full View"
+              width={800}
+              height={600}
+              className="rounded-lg shadow-2xl max-w-full h-auto"
+              sizes="(max-width: 768px) 95vw, 800px"
+            />
+            <button
+              onClick={() => setSelectedCertificate(null)}
+              className="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors"
+            >
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

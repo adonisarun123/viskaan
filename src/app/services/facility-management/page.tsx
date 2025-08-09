@@ -24,7 +24,7 @@ export default function FacilityManagementPage() {
       icon: <Wrench size={24} />,
       title: "Technical Services",
       description:
-        "Electrical, plumbing, HVAC maintenance, and specialized equipment management.",
+        "Electrical, plumbing, HVAC maintenance, civil, STP and specialized equipment management.",
     },
     {
       icon: <Users size={24} />,
@@ -78,7 +78,7 @@ export default function FacilityManagementPage() {
       step: 3,
       title: "Implementation",
       description:
-        "Smooth transition and deployment of services with minimal disruption",
+        "Smooth transition and deployment of resources.",
     },
     {
       step: 4,
@@ -326,7 +326,7 @@ export default function FacilityManagementPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Benefits of Choosing Visskan
+              Benefits of Choosing Viskan
             </h2>
           </motion.div>
 

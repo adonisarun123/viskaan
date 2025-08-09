@@ -9,7 +9,7 @@ export default function SecurityServicesPage() {
     {
       icon: <UserCheck size={24} />,
       title: "Manned Guarding",
-      description: "Trained security personnel for round-the-clock protection of your premises.",
+      description: "Trained security professionals providing 24/7 protection of your premises, supported by advanced mechanized patrol monitoring",
     },
     {
       icon: <Eye size={24} />,
@@ -44,7 +44,6 @@ export default function SecurityServicesPage() {
     "Industrial Security",
     "Residential Security",
     "Event Security",
-    "VIP Protection",
     "Cash-in-Transit",
     "Retail Security",
     "Hospital Security",
@@ -61,7 +60,7 @@ export default function SecurityServicesPage() {
     },
     {
       title: "Specialized Training",
-      modules: ["VIP protection", "Cyber security awareness", "Anti-terrorism", "Disaster management"],
+      modules: ["Cyber security awareness", "Industrial Security", "Disaster management"],
     },
   ];
 
@@ -87,7 +86,7 @@ export default function SecurityServicesPage() {
               Security Services
             </h1>
             <p className="text-xl text-gray-600">
-              PSARA licensed security services providing comprehensive protection for 
+              PSARA licensed security services providing comprehensive protection for
               your people, property, and assets with trained professionals.
             </p>
           </motion.div>
@@ -108,15 +107,10 @@ export default function SecurityServicesPage() {
                 Professional Security Solutions You Can Trust
               </h2>
               <p className="text-gray-600 mb-6">
-                As a PSARA licensed security agency, Visskan Associates provides comprehensive 
-                security solutions backed by trained professionals, many of whom are ex-servicemen. 
-                Our security services combine human expertise with advanced technology to create 
-                multi-layered protection for your facilities.
+                As a PSARA licensed security agency, Viskan Elite Services provides comprehensive security solutions backed by trained professionals, many of whom are ex-servicemen. Our security services combine human expertise with advanced technology to create multi-layered protection for your facilities.
               </p>
               <p className="text-gray-600 mb-6">
-                With extensive experience in securing critical infrastructure including ISRO, 
-                BEL, and HAL facilities, we understand the importance of maintaining the highest 
-                security standards while ensuring smooth operations.
+                With extensive experience in securing critical infrastructure, we understand the importance of maintaining the highest security standards while ensuring smooth operations.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center">
@@ -125,7 +119,7 @@ export default function SecurityServicesPage() {
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="text-[#4CAF50] mr-2" />
-                  <span className="font-semibold">2000+ Security Personnel</span>
+                  <span className="font-semibold">200+ Security Personnel</span>
                 </div>
               </div>
             </motion.div>

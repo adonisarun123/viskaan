@@ -124,8 +124,7 @@ export default function ManpowerPage() {
               Manpower Supply Services
             </h1>
             <p className="text-xl text-gray-600">
-              Comprehensive workforce solutions providing skilled, semi-skilled, and administrative 
-              personnel with complete statutory compliance and performance guarantee.
+              Comprehensive workforce solutions providing highly skilled, skilled, semi-skilled and administrative personnel with complete statutory compliance and performance guarantee.
             </p>
           </motion.div>
         </div>
@@ -145,19 +144,19 @@ export default function ManpowerPage() {
                 Your Trusted Manpower Partner
               </h2>
               <p className="text-gray-600 mb-6">
-                Viskan Elite Services specializes in providing quality manpower solutions across 
-                various industries. With our extensive network and rigorous selection process, 
+                Viskan Elite Services specializes in providing quality manpower solutions across
+                various industries. With our extensive network and rigorous selection process,
                 we ensure that you get the right talent for your specific requirements.
               </p>
               <p className="text-gray-600 mb-6">
-                From skilled technicians to administrative staff, we handle the entire recruitment 
-                process, statutory compliance, and ongoing HR support, allowing you to focus on 
+                From skilled technicians to administrative staff, we handle the entire recruitment
+                process, statutory compliance, and ongoing HR support, allowing you to focus on
                 your core business operations.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center">
                   <CheckCircle className="text-[#4CAF50] mr-2" />
-                  <span className="font-semibold">2000+ Active Personnel</span>
+                  <span className="font-semibold">2500+ Active Personnel</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="text-[#4CAF50] mr-2" />
@@ -377,7 +376,7 @@ export default function ManpowerPage() {
               Need Quality Manpower?
             </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Contact us today to discuss your manpower requirements and get a customized 
+              Contact us today to discuss your manpower requirements and get a customized
               workforce solution for your business needs.
             </p>
             <Link

@@ -52,6 +52,8 @@ const Header = () => {
           </div>
           <div className="flex items-center gap-4 text-xs">
             <span>ISO 9001 Certified</span>
+            <span>|</span>
+            <span>FSSAI Compliant</span>
             <span className="hidden sm:inline">|</span>
             <span className="hidden sm:inline">PSARA Licensed</span>
           </div>
@@ -64,28 +66,29 @@ const Header = () => {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <Link href="/" className="flex items-center group">
-              <div className="relative">
-                {/* Main Logo Container */}
-                <div className="flex flex-col items-start">
-                  {/* Brand Name */}
-                  <div className="relative">
-                    <span className="text-2xl md:text-3xl font-black text-[#003366] tracking-wide leading-none transition-all duration-300 group-hover:text-[#00284d]">
+              <div className="relative flex flex-col items-start">
+                <div className="flex items-center gap-2">
+                  <div className="w-12 h-12 md:w-16 md:h-16">
+                    <img 
+                      src="/images/ViskanLogo.png" 
+                      alt="Viskan Logo" 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-xl md:text-2xl font-black text-[#003366] tracking-wide leading-none transition-all duration-300 group-hover:text-[#00284d]">
                       VISKAN
                     </span>
-                    {/* Elegant underline accent */}
-                    <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-[#FFB300] to-[#4CAF50] transform scale-x-100 transition-transform duration-300"></div>
-                  </div>
-                  
-                  {/* Tagline */}
-                  <div className="relative mt-1">
+                    <div className="relative mt-1">
                     <span className="text-xs md:text-sm font-semibold text-[#4CAF50] tracking-widest uppercase leading-none transition-all duration-300 group-hover:text-[#3d8b40]">
                       Elite Services
                     </span>
+                    </div>
+                    <span className="text-xs font-semibold text-[#4CAF50] tracking-wider uppercase leading-none mt-1">
+                      Since 1995 • 30 Years
+                    </span>
                   </div>
                 </div>
-                
-                {/* Subtle side accent */}
-                <div className="absolute -right-2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#FFB300] via-[#4CAF50] to-transparent opacity-60"></div>
               </div>
             </Link>
 

@@ -29,7 +29,7 @@ const ServicesOverview = () => {
     {
       icon: Users,
       title: "Manpower Supply",
-      description: "Skilled, Highly skilled, semi-skilled, and unskilled workforce for various industry needs.",
+      description: "Highly skilled, skilled, semi-skilled, and unskilled workforce for various industry needs.",
       link: "/services/manpower",
       color: "bg-purple-500",
     },
